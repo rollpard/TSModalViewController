@@ -5,7 +5,7 @@ A Custom Modal View Controller, Hides when tap outside the presented view(presen
 
 ![DemoGIF](https://github.com/rollpard/TSModalViewController/blob/master/demo.gif)
 
-##usage
+##USAGE
 ````
 // Make your ViewController inherit from TSModalViewController
 #import "TSModalViewController.h"
