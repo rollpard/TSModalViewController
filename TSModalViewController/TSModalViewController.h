@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TSModalViewController.h
 //  TSModalViewControllerDemo
 //
 //  Created by CreeveLiu on 14/12/26.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-@interface ViewController : UIViewController
-
+@interface TSModalViewController : UIViewController
 
 @end
-

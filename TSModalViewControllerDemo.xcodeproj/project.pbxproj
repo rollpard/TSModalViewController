@@ -14,6 +14,8 @@
 		FD6C4F211A4D64A70003D20C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6C4F201A4D64A70003D20C /* Images.xcassets */; };
 		FD6C4F241A4D64A70003D20C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD6C4F221A4D64A70003D20C /* LaunchScreen.xib */; };
 		FD6C4F301A4D64A70003D20C /* TSModalViewControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6C4F2F1A4D64A70003D20C /* TSModalViewControllerDemoTests.m */; };
+		FD6C4F3C1A4D66280003D20C /* TSModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6C4F3B1A4D66280003D20C /* TSModalViewController.m */; };
+		FD6C4F3F1A4D680E0003D20C /* ToShowModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6C4F3E1A4D680E0003D20C /* ToShowModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		FD6C4F291A4D64A70003D20C /* TSModalViewControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSModalViewControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6C4F2E1A4D64A70003D20C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD6C4F2F1A4D64A70003D20C /* TSModalViewControllerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSModalViewControllerDemoTests.m; sourceTree = "<group>"; };
+		FD6C4F3A1A4D66280003D20C /* TSModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSModalViewController.h; path = TSModalViewController/TSModalViewController.h; sourceTree = SOURCE_ROOT; };
+		FD6C4F3B1A4D66280003D20C /* TSModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSModalViewController.m; path = TSModalViewController/TSModalViewController.m; sourceTree = SOURCE_ROOT; };
+		FD6C4F3D1A4D680E0003D20C /* ToShowModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToShowModalViewController.h; sourceTree = "<group>"; };
+		FD6C4F3E1A4D680E0003D20C /* ToShowModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToShowModalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 		FD6C4F071A4D64A70003D20C = {
 			isa = PBXGroup;
 			children = (
+				FD6C4F391A4D65FF0003D20C /* TSModalViewController */,
 				FD6C4F121A4D64A70003D20C /* TSModalViewControllerDemo */,
 				FD6C4F2C1A4D64A70003D20C /* TSModalViewControllerDemoTests */,
 				FD6C4F111A4D64A70003D20C /* Products */,
@@ -85,6 +92,8 @@
 				FD6C4F181A4D64A70003D20C /* AppDelegate.m */,
 				FD6C4F1A1A4D64A70003D20C /* ViewController.h */,
 				FD6C4F1B1A4D64A70003D20C /* ViewController.m */,
+				FD6C4F3D1A4D680E0003D20C /* ToShowModalViewController.h */,
+				FD6C4F3E1A4D680E0003D20C /* ToShowModalViewController.m */,
 				FD6C4F1D1A4D64A70003D20C /* Main.storyboard */,
 				FD6C4F201A4D64A70003D20C /* Images.xcassets */,
 				FD6C4F221A4D64A70003D20C /* LaunchScreen.xib */,
@@ -117,6 +126,16 @@
 				FD6C4F2E1A4D64A70003D20C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD6C4F391A4D65FF0003D20C /* TSModalViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FD6C4F3A1A4D66280003D20C /* TSModalViewController.h */,
+				FD6C4F3B1A4D66280003D20C /* TSModalViewController.m */,
+			);
+			name = TSModalViewController;
+			path = TSModalViewControllerDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +239,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD6C4F1C1A4D64A70003D20C /* ViewController.m in Sources */,
+				FD6C4F3F1A4D680E0003D20C /* ToShowModalViewController.m in Sources */,
+				FD6C4F3C1A4D66280003D20C /* TSModalViewController.m in Sources */,
 				FD6C4F191A4D64A70003D20C /* AppDelegate.m in Sources */,
 				FD6C4F161A4D64A70003D20C /* main.m in Sources */,
 			);
@@ -414,6 +435,7 @@
 				FD6C4F351A4D64A70003D20C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD6C4F361A4D64A70003D20C /* Build configuration list for PBXNativeTarget "TSModalViewControllerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +444,7 @@
 				FD6C4F381A4D64A70003D20C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

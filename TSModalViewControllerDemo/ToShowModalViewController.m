@@ -1,16 +1,14 @@
 //
-//  ViewController.h
+//  ToShowModalViewController.m
 //  TSModalViewControllerDemo
 //
 //  Created by CreeveLiu on 14/12/26.
 //  Copyright (c) 2014年 sumavision. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ToShowModalViewController.h"
 
-
-@interface ViewController : UIViewController
+@implementation ToShowModalViewController
 
 
 @end
-

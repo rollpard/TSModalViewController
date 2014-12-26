@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ToShowModalViewController.h"
 
 @interface ViewController ()
 
@@ -14,14 +15,22 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)didClickedGoButton:(id)sender
+{
+    ToShowModalViewController *viewController = [[ToShowModalViewController alloc] init];
+    viewController.modalPresentationStyle = UIModalPresentationFormSheet;
+    [viewController.view setBackgroundColor:[UIColor whiteColor]];
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 
 @end
